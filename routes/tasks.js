@@ -3,6 +3,7 @@ var router = express.Router();
 var mongojs = require('mongojs');
 var db = mongojs('mongodb://<dbuser>:<dbpassword>@ds143221.mlab.com:43221/mytasklist', ['tasks']);
 // ** Above enter your mongodb connection info. If you're using mLab, go into your database and copy the path to connect using the driver (where it says "To connect using a driver via the standard MongoDB URI") and replace the one above. Enter your collection name (ex: tasks) into the array.
+// Default: var db = mongojs('mongodb://<dbuser>:<dbpassword>@ds143221.mlab.com:43221/mytasklist', ['tasks']);
 
 // Get ALL Tasks
 router.get('/tasks', function(req, res, next){
