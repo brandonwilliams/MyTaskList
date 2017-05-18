@@ -46,7 +46,7 @@ module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"containe
 /***/ 144:
 /***/ (function(module, exports) {
 
-module.exports = "<form class=\"well\" (submit)=\"addTask($event)\">\n  <div class=\"form-group\">\n    <label for=\"Add Task\"></label>\n    <input type=\"text\" [(ngModel)]=\"title\" name=\"title\" class=\"form-control\" id=\"\" placeholder=\"Enter Task\">\n    <p class=\"help-block\">Enter the name of your new task.</p>\n  </div>\n</form>\n\n<div class=\"task-list\">\n  <div *ngFor=\"let task of tasks; let i = index\">\n    <div class=\"col-md-1\">\n      <input type=\"checkbox\" [checked]=\"task.isDone\" (click)=\"updateStatus(task)\"/>\n    </div>\n    <div class=\"col-md-7\">\n      {{ task.title }}\n    </div>\n    <div class=\"col-md-4\">\n      <input type=\"button\" (click)=\"deleteTask(task._id, i)\" value=\"Delete\" class=\"btn btn-danger\">\n    </div>\n    <br /><br />\n  </div>\n</div>\n"
+module.exports = "<form class=\"well\" (submit)=\"addTask($event)\">\n  <div class=\"form-group\">\n    <label for=\"Add Task\"></label>\n    <input type=\"text\" [(ngModel)]=\"title\" name=\"title\" class=\"form-control\" id=\"\" placeholder=\"Enter Task\">\n    <p class=\"help-block\">Enter the name of your new task.</p>\n  </div>\n</form>\n\n<div class=\"task-list\">\n  <div *ngFor=\"let task of tasks; let i = index\">\n    <div class=\"col-xs-1\">\n      <input type=\"checkbox\" [checked]=\"task.isDone\" (click)=\"updateStatus(task)\"/>\n    </div>\n    <div class=\"col-xs-7\">\n      {{ task.title }}\n    </div>\n    <div class=\"col-xs-4\">\n      <input type=\"button\" (click)=\"deleteTask(task._id, i)\" value=\"Delete\" class=\"btn btn-danger\">\n    </div>\n    <br /><br />\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -82,7 +82,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var TaskService = (function () {
     function TaskService(http) {
         this.http = http;
-        this.baseUrl = 'https://mytasklist-71084.herokuapp.com';
+        this.baseUrl = 'http://localhost:8080';
         console.log('Task Service Initialized');
     }
     TaskService.prototype.getTasks = function () {

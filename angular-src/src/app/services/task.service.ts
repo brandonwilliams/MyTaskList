@@ -5,7 +5,7 @@ import "rxjs/add/operator/map";
 
 @Injectable()
 export class TaskService {
-  baseUrl = 'https://mytasklist-71084.herokuapp.com';
+  baseUrl = 'http://localhost:8080';
 
   constructor(private http:Http) {
     console.log('Task Service Initialized');
