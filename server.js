@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var tasks = require('./routes/tasks');
 
-var port = (process.env.PORT || 5000);
+var port = (process.env.PORT || 8080);
 
 var app = express();
 
@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 // CORS
 app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://mytasklist-71084.herokuapp.com");
+  res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   next();
