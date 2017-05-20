@@ -1,9 +1,9 @@
 webpackJsonp([1,4],{
 
-/***/ 140:
+/***/ 136:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(27)(false);
+exports = module.exports = __webpack_require__(26)(false);
 // imports
 
 
@@ -18,10 +18,10 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 141:
+/***/ 137:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(27)(false);
+exports = module.exports = __webpack_require__(26)(false);
 // imports
 
 
@@ -36,35 +36,35 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
-/***/ 143:
+/***/ 138:
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"navbar navbar-default\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <a class=\"navbar-brand\" href=\"#\">My Task List by Brandon</a>\n    </div>\n\n\n  </div>\n</nav>\n\n<div class=\"container\">\n<h1>\n  {{title}}\n</h1>\n\n  <app-tasks></app-tasks>\n</div>\n"
 
 /***/ }),
 
-/***/ 144:
+/***/ 139:
 /***/ (function(module, exports) {
 
 module.exports = "<form class=\"well\" (submit)=\"addTask($event)\">\n  <div class=\"form-group\">\n    <label for=\"Add Task\"></label>\n    <input type=\"text\" [(ngModel)]=\"title\" name=\"title\" class=\"form-control\" id=\"\" placeholder=\"Enter Task\">\n    <p class=\"help-block\">Enter the name of your new task.</p>\n  </div>\n</form>\n\n<div class=\"task-list\">\n  <div *ngFor=\"let task of tasks; let i = index\">\n    <div class=\"col-xs-1\">\n      <input type=\"checkbox\" [checked]=\"task.isDone\" (click)=\"updateStatus(task)\"/>\n    </div>\n    <div class=\"col-xs-7\">\n      {{ task.title }}\n    </div>\n    <div class=\"col-xs-4\">\n      <input type=\"button\" (click)=\"deleteTask(task._id, i)\" value=\"Delete\" class=\"btn btn-danger\">\n    </div>\n    <br /><br />\n  </div>\n</div>\n"
 
 /***/ }),
 
-/***/ 169:
+/***/ 164:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(77);
+module.exports = __webpack_require__(73);
 
 
 /***/ }),
 
-/***/ 53:
+/***/ 49:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TaskService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -126,7 +126,7 @@ var _a;
 
 /***/ }),
 
-/***/ 76:
+/***/ 72:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -135,20 +135,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 76;
+webpackEmptyContext.id = 72;
 
 
 /***/ }),
 
-/***/ 77:
+/***/ 73:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(82);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(80);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(82);
 
 
 
@@ -161,7 +161,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 83:
+/***/ 79:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -181,10 +181,10 @@ var AppComponent = (function () {
     return AppComponent;
 }());
 AppComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-root',
-        template: __webpack_require__(143),
-        styles: [__webpack_require__(140)]
+        template: __webpack_require__(138),
+        styles: [__webpack_require__(136)]
     })
 ], AppComponent);
 
@@ -192,17 +192,17 @@ AppComponent = __decorate([
 
 /***/ }),
 
-/***/ 84:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tasks_tasks_component__ = __webpack_require__(85);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_task_service__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(79);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tasks_tasks_component__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_task_service__ = __webpack_require__(49);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -242,12 +242,12 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 85:
+/***/ 81:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_task_service__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_task_service__ = __webpack_require__(49);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TasksComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -312,10 +312,10 @@ var TasksComponent = (function () {
     return TasksComponent;
 }());
 TasksComponent = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_3" /* Component */])({
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_4" /* Component */])({
         selector: 'app-tasks',
-        template: __webpack_require__(144),
-        styles: [__webpack_require__(141)]
+        template: __webpack_require__(139),
+        styles: [__webpack_require__(137)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_task_service__["a" /* TaskService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__services_task_service__["a" /* TaskService */]) === "function" && _a || Object])
 ], TasksComponent);
@@ -325,7 +325,7 @@ var _a;
 
 /***/ }),
 
-/***/ 86:
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -342,5 +342,5 @@ var environment = {
 
 /***/ })
 
-},[169]);
+},[164]);
 //# sourceMappingURL=main.bundle.js.map
