@@ -1,0 +1,22 @@
+<div class="jumbotron text-center">
+  <h1>MyTaskList</h1>
+  <p class="lead">Welcome to MyTaskList, a MEAN stack project by Brandon Williams.</p>
+  <div *ngIf="!authService.loggedIn()">
+    <a [routerLink]="['/register']" class="btn btn-primary">Register</a> <a [routerLink]="['/login']" class="btn btn-default">Login</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h3>Express Backend</h3>
+    <p>A solid Node.js/Express server using Mongoose to organize models and query the database</p>
+  </div>
+  <div class="col-md-4">
+    <h3>Angular-CLI</h3>
+    <p>Angular-CLI to generate components, services and more. Local dev server and easy compilation</p>
+  </div>
+  <div class="col-md-4">
+    <h3>JWT Tokens</h3>
+    <p>Full-featured authentication using JSON web tokens. Login and store your user data</p>
+  </div>
+</div>

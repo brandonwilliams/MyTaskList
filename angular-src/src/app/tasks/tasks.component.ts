@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TaskService } from '../services/task.service';
+import { AuthService } from '../services/auth.service';
 import { Task } from '../task';
 
 @Component({
@@ -11,7 +12,7 @@ export class TasksComponent implements OnInit {
   tasks: Task[];
   title: string;
 
-  constructor(private taskService:TaskService) {
+  constructor(private taskService:TaskService, private authService: AuthService) {
     this.taskService.getTasks()
       .subscribe(tasks => {
         this.tasks = tasks;
@@ -24,9 +25,13 @@ export class TasksComponent implements OnInit {
   addTask(event){
     event.preventDefault();
     // console.log(this.title);
+    var user = JSON.parse(localStorage.getItem('user'));
+    var userId = user.id;
+
     var newTask = {
       title: this.title,
-      isDone: false
+      isDone: false,
+      userid: userId
     };
 
     this.taskService.addTask(newTask)
@@ -56,7 +61,8 @@ export class TasksComponent implements OnInit {
     var _task = {
       _id: task._id,
       title: task.title,
-      isDone: !task.isDone
+      isDone: !task.isDone,
+      userid: task.userid
     };
 
     this.taskService.updateStatus(_task).subscribe(data => {

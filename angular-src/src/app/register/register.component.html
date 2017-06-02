@@ -1,0 +1,29 @@
+<h2 class="page-header">Register</h2>
+<form (submit)="onRegisterSubmit()">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" [(ngModel)]="name" name="name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Username</label>
+    <input type="text" [(ngModel)]="username" name="username" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input type="text" [(ngModel)]="email" name="email" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" [(ngModel)]="password" name="password" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Human Check</label>
+  <re-captcha
+      [(ngModel)]="captcha"
+      name="captcha"
+      required
+      siteKey="6Ldn2SMUAAAAAO6_k6q7nizCxRhAbcXmd3i-SYi5"
+    ></re-captcha>
+    </div>
+  <input type="submit" class="btn btn-primary" value="Submit">
+</form>
