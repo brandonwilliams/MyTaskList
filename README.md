@@ -7,10 +7,13 @@ Notes:
 
 1. To configure MongoDB (I'm currently using mLab), add config/database.js and add the following with your own info:
 
+```javascript
 module.exports = {
   database: 'mongodb://<myusername>:<mypassword>@ds143221.mlab.com:43221/<mydatabase>',
   secret: '<mysecret>'
 }
+```
+
 2. Run 'ng install' from the project folder and also from the angular-src folder to install your dependencies.
 3. Go to angular-src/src/app/services/task.service.ts and change the baseUrl to yours. (Ex: "http://localhost:8080" or "https://mytasklist-12345.herokuapp.com").
 3. Run the application by cd'ing into your root folder and entering "node serve" (Suggestion: Try out nodemon or similar to auto restart the server after making changes).
