@@ -6,7 +6,7 @@ import { AuthService } from './auth.service';
 
 @Injectable()
 export class TaskService {
-  baseUrl = 'https://mytasklist-12345.herokuapp.com';
+  baseUrl = 'http://localhost:8080';
 
   constructor(private http:Http, private authService: AuthService) {
     console.log('Task Service Initialized');
