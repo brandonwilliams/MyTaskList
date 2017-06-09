@@ -10,7 +10,8 @@ Notes:
 ```javascript
 module.exports = {
   database: 'mongodb://<myusername>:<mypassword>@ds143221.mlab.com:43221/<mydatabase>',
-  secret: '<mysecret>'
+  secret: '<mysecret>',
+  recaptchaSecret: '<myRecaptchaSecret>'
 }
 ```
 

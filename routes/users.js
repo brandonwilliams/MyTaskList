@@ -8,7 +8,7 @@ const config = require('../config/database');
 const User = require('../models/user');
 
 const recaptcha = new Recaptcha({
-    secret: '6Ldn2SMUAAAAAEhI5pbFSAln_ENURusJ0XgCC3Px',
+    secret: config.recaptchaSecret,
     verbose: true
 });
 
