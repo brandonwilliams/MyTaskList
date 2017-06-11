@@ -1,7 +1,7 @@
 # MyTaskList
 Simple to do list with MEAN app (Created with Heroku in mind)
 
-Live on Heroku @ https://mytasklist-71084.herokuapp.com/
+<!-- Live on Heroku @ https://mytasklist-71084.herokuapp.com/ -->
 
 Notes:
 
